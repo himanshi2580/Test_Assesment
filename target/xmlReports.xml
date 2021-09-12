@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="70.183">
+    <testcase classname="Automation Assessment 1" name="Login to gmail and sent a mail" time="42.357">
+        <failure message="Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on WINDOWS (4bb629385462ccce48f7f71911c16c67)] -&gt; xpath: //input[@type='password']] (tried for 5 second(s) with 500 milliseconds interval)&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'PUNEET', ip: '192.168.1.15', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 93.0.4577.63, chrome: {chromedriverVersion: 93.0.4577.63 (ff5c0da2ec0ad..., userDataDir: C:\Users\PUNEET\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:56699}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 4bb629385462ccce48f7f71911c16c67" type="org.openqa.selenium.TimeoutException"><![CDATA[Given User is on gmail lodin page...........................................passed
+And Enter username and password.............................................failed
+When Click on Login button..................................................skipped
+Then User should be logged into gmail account...............................skipped
+When Create a mail..........................................................skipped
+Then Attach a file and add recipients and subjects..........................skipped
+And Click on send button....................................................skipped
+And Verify the message for mail sent........................................skipped
+
+StackTrace:
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on WINDOWS (4bb629385462ccce48f7f71911c16c67)] -> xpath: //input[@type='password']] (tried for 5 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'PUNEET', ip: '192.168.1.15', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 93.0.4577.63, chrome: {chromedriverVersion: 93.0.4577.63 (ff5c0da2ec0ad..., userDataDir: C:\Users\PUNEET\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:56699}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 4bb629385462ccce48f7f71911c16c67
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at commonfunctions.Utils.enterText(Utils.java:91)
+	at pages.GmailLoginPage.enterUserNameAndPassword(GmailLoginPage.java:60)
+	at stepdefinitions.Assessment1_Gmail.enter_username_and_password(Assessment1_Gmail.java:25)
+	at ✽.Enter username and password(file:///C:/Users/PUNEET/Desktop/New%20folder/New%20folder/Test_Assesment/src/test/resources/features/Assessment1_Gmail.feature:5)
+]]></failure>
+    </testcase>
+    <testcase classname="Automation Assessments 2" name="Search ticket on IRCTC site" time="9.821">
+        <system-out><![CDATA[Given User is on IRCTC sites................................................passed
+And User fills the From and To location.....................................passed
+And Select TATKAL ticket....................................................passed
+And Select Date one month from Today Date...................................passed
+And Select AC three Tier....................................................passed
+And Select Train with Available Berth.......................................passed
+And Click on Search.........................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Automation Assessments 3" name="Enter the details of different user on Customer IOn site" time="17.66">
+        <system-out><![CDATA[Given User is on Customer IOn sites.........................................passed
+And Fill the details in the form............................................passed
+]]></system-out>
+    </testcase>
+</testsuite>
